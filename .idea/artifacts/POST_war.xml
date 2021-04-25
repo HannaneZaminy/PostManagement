@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="POST:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>POST</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="POST-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="POST:war exploded" />
+    </root>
+  </artifact>
+</component>

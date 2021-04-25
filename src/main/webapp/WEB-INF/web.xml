@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>loginCustomer</servlet-name>
+        <servlet-class>com.post.servlet.LoginCustomerServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginCustomer</servlet-name>
+        <url-pattern>/loginCustomer</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>logoutCustomer</servlet-name>
+        <servlet-class>com.post.servlet.LogoutServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logoutCustomer</servlet-name>
+        <url-pattern>/logoutCostomer</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>registering</servlet-name>
+        <servlet-class>com.post.servlet.RegisterCustomerServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registering</servlet-name>
+        <url-pattern>/registering</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>duplicateEmailFilter</filter-name>
+        <filter-class>com.post.filters.CheckForDuplicateEmailFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>duplicateEmailFilter</filter-name>
+        <url-pattern>/registering</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>duplicateUserNameFilter</filter-name>
+        <filter-class>com.post.filters.CheckForDuplicateUsernameFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>duplicateUserNameFilter</filter-name>
+        <url-pattern>/registering</url-pattern>
+    </filter-mapping>
+
+
+
+
+
+
+    <servlet>
+        <servlet-name>Requestpost</servlet-name>
+        <servlet-class>com.post.servlet.RequestpostServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Requestpost</servlet-name>
+        <url-pattern>/Requestpost</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LoginEmployee</servlet-name>
+        <servlet-class>com.post.servlet.EmployeeLoginServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginEmployee</servlet-name>
+        <url-pattern>/LoginEmployee</url-pattern>
+    </servlet-mapping>
+
+<!--    &lt;!&ndash;    <servlet>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <servlet-name>TrackOrder</servlet-name>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <servlet-class>com.postproject.servlet.TrackOrderServlet</servlet-class>&ndash;&gt;-->
+
+<!--    &lt;!&ndash;    </servlet>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <servlet-mapping>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <servlet-name>TrackOrder</servlet-name>&ndash;&gt;-->
+<!--    &lt;!&ndash;        <url-pattern>/TrackOrder</url-pattern>&ndash;&gt;-->
+<!--    &lt;!&ndash;    </servlet-mapping>&ndash;&gt;-->
+
+
+    <servlet>
+        <servlet-name>TakeMoreOrder</servlet-name>
+        <servlet-class>com.post.servlet.TakeMoreOrderServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TakeMoreOrder</servlet-name>
+        <url-pattern>/TakeMoreOrder</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>TakeOrder</servlet-name>
+        <servlet-class>com.post.servlet.TakeOrderServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TakeOrder</servlet-name>
+        <url-pattern>/TakeOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PendingOrder</servlet-name>
+        <servlet-class>com.post.servlet.PendingOrderServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PendingOrder</servlet-name>
+        <url-pattern>/PendingOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PendOrder</servlet-name>
+        <servlet-class>com.post.servlet.PendOrderServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PendOrder</servlet-name>
+        <url-pattern>/PendOrder</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AddEmployee</servlet-name>
+        <servlet-class>com.post.servlet.AddEmployeeServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddEmployee</servlet-name>
+        <url-pattern>/AddEmployee</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>ListEmployee</servlet-name>
+        <servlet-class>com.post.servlet.ListEmployeeServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListEmployee</servlet-name>
+        <url-pattern>/ListEmployee</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListCustomer</servlet-name>
+        <servlet-class>com.post.servlet.ListCustomerServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListCustomer</servlet-name>
+        <url-pattern>/ListCustomer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TrakeOrder</servlet-name>
+        <servlet-class>com.post.servlet.TrakeOrderServlet</servlet-class>
+
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TrakeOrder</servlet-name>
+        <url-pattern>/TrakeOrder</url-pattern>
+    </servlet-mapping>
+    <!--    <servlet>-->
+    <!--        <servlet-name>PendinOrder</servlet-name>-->
+    <!--        <servlet-class>com.SmartPost.postproject.servlet.PendinOrderServlet</servlet-class>-->
+
+    <!--    </servlet>-->
+    <!--    <servlet-mapping>-->
+    <!--        <servlet-name>PendinOrder</servlet-name>-->
+    <!--        <url-pattern>/PendinOrder</url-pattern>-->
+    <!--    </servlet-mapping>-->
+
+<!--    <filter>-->
+<!--        <filter-name>BadStatus</filter-name>-->
+<!--        <filter-class>com.post.filters.BadStatusFilter</filter-class>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>BadStatus</filter-name>-->
+<!--        <url-pattern>/PendOrder</url-pattern>-->
+<!--    </filter-mapping>-->
+</web-app>

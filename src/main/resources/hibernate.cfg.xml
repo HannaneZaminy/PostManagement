@@ -1,0 +1,16 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3307/post</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">1377722</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        <mapping class="com.post.model.entity.Customer"/>
+        <mapping class="com.post.model.entity.Employee"/>
+        <mapping class="com.post.model.entity.Envelope"/>
+        <mapping class="com.post.model.entity.EnvelopeInformation"/>
+
+
+    </session-factory>
+</hibernate-configuration>
